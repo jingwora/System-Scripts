@@ -9,6 +9,7 @@ System Scripts is a collection of OS-level scripts designed to automate and stre
 - **Disk Usage Monitoring**: Alerts when disk space reaches a critical threshold.
 - **Service Management**: Start, stop, or restart system services.
 - **Log Rotation and Cleanup**: Automates log file management.
+- 📄 [Bash](https://github.com/jingwora/bioinformatics-tools/blob/main/tools/linux-command/linux-cmd.ipynb)
 
 ### b. Zsh Scripts
 - **Custom Aliases**: Define shortcuts for common commands.
