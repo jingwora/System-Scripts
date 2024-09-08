@@ -38,6 +38,7 @@ System Scripts is a collection of OS-level scripts designed to automate and stre
 
 
 ## 3. Other commands
-- **The Azure command-line interface (Azure CLI)**: a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation.
+- **The Azure command-line interface (Azure CLI) (az)**: a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation.
 
+- **The Azure Developer CLI (azd)**: an open-source tool that accelerates your path from a local development environment to Azure. azd provides a set of developer-friendly commands that map to key stages in your workflow (code, build, deploy, monitor). 
 
