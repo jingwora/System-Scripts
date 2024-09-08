@@ -1,5 +1,9 @@
+## az vs azd:
+- az is a low-level tool focused on Azure resource management, while azd simplifies the development and deployment of full applications by managing both code and infrastructure.
+- Use az (Azure CLI) if you need detailed control over specific resources (e.g., creating a virtual machine, managing storage accounts).
+- Use azd (Azure Developer CLI) if you want to develop and deploy an entire application (e.g., a web app or microservice) with automated infrastructure provisioning, deployment, and environment management.
 
-## Common Commands
+## Common Commands (az)
 
 | Group                | Command                                  | Description                                                   | Format                          | Example                                                       |
 |----------------------|------------------------------------------|---------------------------------------------------------------|----------------------------------|---------------------------------------------------------------|
@@ -21,3 +25,28 @@
 | **Function App**      | `az functionapp create`                  | Creates an Azure Function App                                  | `az functionapp create --resource-group <group> --name <appname> --storage-account <storage>` | `az functionapp create --resource-group MyResourceGroup --name MyFunctionApp --storage-account mystorage` |
 | **App Service**       | `az appservice plan create`              | Creates an App Service plan                                    | `az appservice plan create --name <plan-name> --resource-group <group>` | `az appservice plan create --name MyAppServicePlan --resource-group MyResourceGroup` |
 | **Web App**           | `az webapp create`                       | Creates a web app                                              | `az webapp create --resource-group <group> --plan <plan-name> --name <app-name>` | `az webapp create --resource-group MyResourceGroup --plan MyAppServicePlan --name MyWebApp` |
+
+
+## Common Commands (azd)
+
+| Group              | Command                                  | Description                                                   | Format                          | Example                                                       |
+|--------------------|------------------------------------------|---------------------------------------------------------------|----------------------------------|---------------------------------------------------------------|
+| **Authentication** | `azd auth login`                         | Logs in to Azure with Azure Developer CLI                      | `azd auth login`                 | `azd auth login`                                               |
+| **Authentication** | `azd auth logout`                        | Logs out of Azure Developer CLI                                | `azd auth logout`                | `azd auth logout`                                              |
+| **Initialization** | `azd init`                               | Initializes a new project based on a template                  | `azd init --template <template>`  | `azd init --template azure-web-app`                            |
+| **Provisioning**   | `azd provision`                          | Provisions Azure resources defined in your project             | `azd provision`                  | `azd provision`                                                |
+| **Deployment**     | `azd deploy`                             | Deploys code to the Azure resources                            | `azd deploy`                     | `azd deploy`                                                   |
+| **Monitor**        | `azd monitor`                            | Opens Azure Monitor for the project                            | `azd monitor`                    | `azd monitor`                                                  |
+| **Pipeline**       | `azd pipeline config`                    | Configures CI/CD pipeline for the project                      | `azd pipeline config`            | `azd pipeline config`                                          |
+| **Environment**    | `azd env list`                           | Lists all environments for the current project                 | `azd env list`                   | `azd env list`                                                 |
+| **Environment**    | `azd env select`                         | Selects a specific environment                                 | `azd env select <env-name>`       | `azd env select dev`                                           |
+| **Environment**    | `azd env new`                            | Creates a new environment for the project                      | `azd env new <env-name>`          | `azd env new staging`                                          |
+| **Environment**    | `azd env delete`                         | Deletes an environment and its resources                       | `azd env delete <env-name>`       | `azd env delete dev`                                           |
+| **Configuration**  | `azd config list`                        | Lists all configuration settings                               | `azd config list`                | `azd config list`                                              |
+| **Configuration**  | `azd config set`                         | Sets a configuration setting for the current project           | `azd config set <setting> <value>`| `azd config set azd.default.location eastus`                   |
+| **Configuration**  | `azd config get`                         | Retrieves a configuration setting                             | `azd config get <setting>`        | `azd config get azd.default.location`                          |
+| **General**        | `azd version`                            | Shows the version of Azure Developer CLI                       | `azd version`                    | `azd version`                                                  |
+
+
+
+
