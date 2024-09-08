@@ -37,3 +37,7 @@ System Scripts is a collection of OS-level scripts designed to automate and stre
 - **Extension**: .bat, .cmd
 
 
+## 3. Other commands
+- **The Azure command-line interface (Azure CLI)**: a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation.
+
+
