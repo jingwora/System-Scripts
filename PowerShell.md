@@ -18,8 +18,22 @@
 | **File Handling**| `Remove-Item`             | Deletes files, folders, or other objects                  | `Remove-Item <Path>`             | `Remove-Item C:\Temp\file.txt`                               |
 | **File Handling**| `Rename-Item`             | Renames a file or folder                                  | `Rename-Item <Path> <NewName>`   | `Rename-Item C:\Temp\file.txt newfile.txt`                   |
 | **File Handling**| `New-Item`                | Creates a new file or folder                              | `New-Item -Path <Path> -ItemType`| `New-Item -Path C:\Temp\newfile.txt -ItemType File`          |
-| **Date/Time**    | `Get-Date`                | Retrieves the current date and time                       | `Get-Date`                      | `Get-Date`                                                   |
+| **Date/Time**    | `Get-Date`                | Retrieves the current date and time                       | `Get-Date`                      | `Get-Date`                                             |
 
+## PowerShell Version and Module
+
+| Group            | Command                   | Description                                               | Format                          | Example                                                      |
+|------------------|---------------------------|-----------------------------------------------------------|----------------------------------|--------------------------------------------------------------|
+ **PowerShell Version** | `Get-Host`                            | Displays the current PowerShell host information               | `Get-Host`                        | `Get-Host`                                                    |
+| **PowerShell Version** | `Get-PSVersionTable`                  | Displays the version of PowerShell                             | `Get-PSVersionTable`              | `Get-PSVersionTable`                                          |
+| **PowerShell Version** | `Update-Module PowerShellGet`         | Updates the PowerShellGet module to manage versions            | `Update-Module PowerShellGet`     | `Update-Module PowerShellGet`                                 |
+| **PowerShell Version** | `Install-Module PowerShellGet -Force` | Installs the PowerShellGet module to manage versions           | `Install-Module PowerShellGet -Force` | `Install-Module PowerShellGet -Force`                        |
+| **PowerShell Version** | `Get-PackageSource`                   | Lists package sources for PowerShell modules                   | `Get-PackageSource`               | `Get-PackageSource`                                           |
+| **Module Management** | `Find-Module`                        | Finds available modules from the PowerShell Gallery            | `Find-Module <ModuleName>`         | `Find-Module Az`                                              |
+| **Module Management** | `Install-Module`                     | Installs a PowerShell module                                   | `Install-Module <ModuleName>`      | `Install-Module Az`                                           |
+| **Module Management** | `Update-Module`                      | Updates a PowerShell module to the latest version              | `Update-Module <ModuleName>`       | `Update-Module Az`                                            |
+| **Module Management** | `Uninstall-Module`                   | Uninstalls a PowerShell module                                 | `Uninstall-Module <ModuleName>`    | `Uninstall-Module Az`                                         |
+| **Module Management** | `Get-Module`                         | Gets information about loaded PowerShell modules               | `Get-Module`                      | `Get-Module`                                                  |
 ## Azure Related Commands
 
 | Group            | Command                                  | Description                                                   | Format                          | Example                                                       |
