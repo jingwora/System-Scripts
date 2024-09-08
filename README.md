@@ -15,6 +15,7 @@ System Scripts is a collection of OS-level scripts designed to automate and stre
 ### b. Zsh Scripts
 - **Custom Aliases**: Define shortcuts for common commands.
 - **Git Prompt Setup**: Show Git branch and status in terminal prompts.
+- **Extension**: .zsh
 
 ---
 
