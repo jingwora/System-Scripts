@@ -1,7 +1,7 @@
-## az vs azd:
-- az is a low-level tool focused on Azure resource management, while azd simplifies the development and deployment of full applications by managing both code and infrastructure.
-- Use az (Azure CLI) if you need detailed control over specific resources (e.g., creating a virtual machine, managing storage accounts).
-- Use azd (Azure Developer CLI) if you want to develop and deploy an entire application (e.g., a web app or microservice) with automated infrastructure provisioning, deployment, and environment management.
+## `az` vs `azd`:
+- `az` is a low-level tool focused on Azure resource management, while `azd` simplifies the development and deployment of full applications by managing both code and infrastructure.
+- Use `az` (Azure CLI) if you need detailed control over specific resources (e.g., creating a virtual machine, managing storage accounts).
+- Use `azd` (Azure Developer CLI) if you want to develop and deploy an entire application (e.g., a web app or microservice) with automated infrastructure provisioning, deployment, and environment management.
 
 ## Common Commands (az)
 
